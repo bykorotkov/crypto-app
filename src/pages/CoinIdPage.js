@@ -63,7 +63,7 @@ const CoinIdPage = () => {
     <div className='details'>
         {isLoading 
             ? <div style={{display: 'flex', justifyContent: 'center'}}><Loader /></div>
-            : <div><h1 className='idPage'>Вы открыли страницу поста с названием {id.toUpperCase()}</h1>
+            : <div><h1 className='idPage'>You visited {id.toUpperCase()} page</h1>
         <HistoryChart data={coinData} />
         <CoinData data={coinData.detail} />
         </div>}
