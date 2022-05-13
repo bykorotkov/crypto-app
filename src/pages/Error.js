@@ -3,7 +3,7 @@ import React from 'react'
 const Error = () => {
   return (
     <div>
-        <h1 style={{color: 'red'}}>
+        <h1 style={{color: 'red', display: 'flex', justifyContent: 'center'}}>
             Вы перешли на несуществующую страницу!
         </h1>
     </div>

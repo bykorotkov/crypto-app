@@ -1,5 +1,5 @@
 {
-  "homepage": "https://bykorotkov.github.io/crypto-app/",
+  "homepage": "http://localhost:3000/coins",
   "name": "crypto-app",
   "version": "0.1.0",
   "private": true,
