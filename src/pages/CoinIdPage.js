@@ -23,25 +23,25 @@ const CoinIdPage = () => {
       setIsLoading(true)
       const fetchData = async () => {
         const [day, week, year, detail] = await Promise.all([
-        coinGecko.get(`./coins/${id}/market_chart/`, {
+        coinGecko.get(`/coins/${id}/market_chart/`, {
           params: {
             vs_currency: "usd",
             days: "1",
           }
         }),
-        coinGecko.get(`./coins/${id}/market_chart/`, {
+        coinGecko.get(`/coins/${id}/market_chart/`, {
           params: {
             vs_currency: "usd",
             days: "7",
           }
         }),
-        coinGecko.get(`./coins/${id}/market_chart/`, {
+        coinGecko.get(`/coins/${id}/market_chart/`, {
           params: {
             vs_currency: "usd",
             days: "365",
           }
         }),
-        coinGecko.get("./coins/markets/", {
+        coinGecko.get("/coins/markets/", {
           params: {
             vs_currency: "usd",
             ids: id,

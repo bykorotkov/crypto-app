@@ -8,12 +8,12 @@ import Coins from '../pages/Coins';
 const AppRouter = () => {
   return (
     <Routes>
-        <Route path="./about" element={<About />} />
-        <Route exact path="./coins" element={<Coins />} />
-        <Route path="./error" element={<Error />} />
-        <Route exact path="./coins/:id" element={<CoinIdPage />} />
-        <Route path='./*' element={<Navigate to="./error"/>} />  
-        <Route path='./' element={<Navigate to="./coins"/>} />  
+        <Route path="/about" element={<About />} />
+        <Route exact path="/coins" element={<Coins />} />
+        <Route path="/error" element={<Error />} />
+        <Route exact path="/coins/:id" element={<CoinIdPage />} />
+        <Route path='*' element={<Navigate to="/error"/>} />  
+        <Route path='/' element={<Navigate to="/coins"/>} />  
     </Routes>
   )
 }
