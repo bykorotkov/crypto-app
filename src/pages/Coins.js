@@ -65,7 +65,7 @@ function Coins() {
         </div>
         }
         <div id='sidebar' className='cryptoNews'>{news.map((news) => {
-          return <News title={news.title} feedDate={news.feedDate} link={news.link} />
+          return <News title={news.title} link={news.link} />
         })}
         
         </div>
