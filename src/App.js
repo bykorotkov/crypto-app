@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/UI/Navbar/Navbar';
 import AppRouter from './components/AppRouter';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
        <Navbar />
        <AppRouter />
-    </BrowserRouter>
+    </HashRouter>
 
   ) 
 }
